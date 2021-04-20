@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Form Designing</title>
+
+    <style>
+ 
+form{
+    align-self: center;
+    ;
+}
+        
+
+    </style>
+</head>
+
+<body style="background-color:darkkhaki">
+
+    <form action=" " autocomplete="on" >
+        
+        <fieldset>
+
+<label for="sname" > Student Name </label>
+<input id="sname" aria-label="Student Name" required type="text" placeholder="Enter Full name">
+
+<br><br>
+
+<label for="prn"> PRN_No </label>
+     <input id="prn" required type="text" placeholder="Enter PRN_No" minlength="5" maxlength="10">
+
+
+
+<label for="seatno"> Exam Seat No </label>
+<input id="seatno" required type="text" placeholder="Enter Seat No" maxlength="5">
+
+<br><br>
+
+<label>DOB</label>
+<input type="date" required>
+
+<br><br>
+
+<label for="Obtained Marks">Obtained Marks</label>
+<input type="text" required>
+<label for="om">Out of Marks</label>
+<input type="text" value="500" disabled>
+<label for="per"> Percentage </label>
+<input id="per" required type="text" placeholder="Enter Percentage">
+
+
+<br><br>
+
+<label for="gen"> Select Gender</label><br>
+
+<label> Male </label>
+<input required checked type="radio" name="radb"><br>
+
+<label> Female </label>
+<input required type="radio" name="radb">
+
+<br><br>
+
+<label> Mobile No </label>
+<input type="tel" required maxlength="10" placeholder="10 digits mobile No">
+
+
+
+<label> Telephone No</label>
+<input type="tel" placeholder="Enter Telephone No">
+
+<br><br>
+
+<label> Institute Choice </label>
+<br>
+
+<input type="checkbox" checked> <label>MIT WPU </label> <br>
+<input type="checkbox"> <label>PCCOE </label> <br>
+<input type="checkbox"> <label>AISSM </label> <br>
+<input type="checkbox"> <label>BVP </label> <br>
+<input type="checkbox"> <label>PICT </label> <br><br>
+
+
+
+    <label>Select City</label>
+    <input type="text" list="city" placeholder="City">
+
+    <datalist id="city">
+
+        <option value="Pune">Pune</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Hydrabad">Hydrabad</option>
+        <option value="Banglore">Banglore</option>
+    </datalist>
+
+    <br><br>
+
+    <label>Select Branch</label>
+    <select>
+        <option value="Computer Engineering" >Computer Engineering</option>
+        <option value="Mechanical Engineering">Mechanical Engineering</option>
+        <option value="Electrical Engineering">Electrical Engineering</option>
+        <option value="Electrical Engineering">Electrical Engineering</option>
+        <option value="Civil Engineering">Civil Engineering</option>
+    </select>
+<br><br>
+
+<label>Subjects</label>
+    <select>
+
+        <optgroup label="Computer Enginnering">
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="COA">COA</option>
+            <option value="TOC">TOC</option>
+            <option value="SE">SE</option>
+        </optgroup>
+
+        <optgroup Label="Mechanical Engineering">
+<option value="SOM">SOM</option>
+<oprion value="TOM">TOM</oprion>
+<option value="EM">EM</option>
+<option value="ME">ME</option>
+<option value="CF">CF</option>
+
+        </optgroup>
+    </select>
+
+
+<br><br>
+
+<label>Upload Resume</label>
+<input type="file" accept="application/pdf, application/mp4, application/ppt" multiple> 
+
+<label>Any Suggestions ??</label>
+<textarea rows="1" cols="30" placeholder="Write your suggestions here.."></textarea> <br><br>
+
+<button type="submit"> Submit </button>
+
+<button type="reset">Reset</button>
+
+ 
+
+    </form>
+</fieldset>
+</body>
+</html>
